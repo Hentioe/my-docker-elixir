@@ -1,4 +1,4 @@
-FROM hentioe/erlang:28.0.2-alpine
+FROM hentioe/erlang:28.3.1-alpine
 
 ARG TARGETARCH BUILDARCH
 

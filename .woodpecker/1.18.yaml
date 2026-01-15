@@ -1,6 +1,8 @@
 when:
   - branch: [main]
     event: push
+    path:
+      include: ["1.18/**"]
 
 steps:
   1.18-otp-28-void-build-push:

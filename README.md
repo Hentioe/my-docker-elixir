@@ -24,13 +24,16 @@ You can also pull without specifying any tags, which will default to fetching th
 
 ## Supported tags and respective `Dockerfile` links
 
+- [`1.20.0-rc.1-otp-28-slim`, `1.20-otp-28-slim`](https://github.com/Hentioe/my-docker-elixir/blob/main/1.20/otp-28-slim/Dockerfile)
+- [`1.20.0-rc.1-otp-28-alpine`, `1.20-otp-28-alpine`](https://github.com/Hentioe/my-docker-elixir/blob/main/1.20/otp-28-alpine/Dockerfile)
+- [`1.20.0-rc.1-otp-28-void`, `1.20-otp-28-void`](https://github.com/Hentioe/my-docker-elixir/blob/main/1.20/otp-28-void/Dockerfile)
 - [`1.18.4-otp-28-slim`, `1.18-otp-28-slim`, `latest`](https://github.com/Hentioe/my-docker-elixir/blob/main/1.18/otp-28-slim/Dockerfile)
 - [`1.18.4-otp-28-alpine`, `1.18-otp-28-alpine`](https://github.com/Hentioe/my-docker-elixir/blob/main/1.18/otp-28-alpine/Dockerfile)
 - [`1.18.4-otp-28-void`, `1.18-otp-28-void`](https://github.com/Hentioe/my-docker-elixir/blob/main/1.18/otp-28-void/Dockerfile)
-- [`1.18.4-otp-27-slim`, `1.18-otp-27-slim`, `latest`](https://github.com/Hentioe/my-docker-elixir/blob/main/1.18/otp-27-slim/Dockerfile)
+- [`1.18.4-otp-27-slim`, `1.18-otp-27-slim`](https://github.com/Hentioe/my-docker-elixir/blob/main/1.18/otp-27-slim/Dockerfile)
 - [`1.18.4-otp-27-alpine`, `1.18-otp-27-alpine`](https://github.com/Hentioe/my-docker-elixir/blob/main/1.18/otp-27-alpine/Dockerfile)
 - [`1.18.4-otp-27-void`, `1.18-otp-27-void`](https://github.com/Hentioe/my-docker-elixir/blob/main/1.18/otp-27-void/Dockerfile)
-- [`1.17.3-otp-27-slim`, `1.17-otp-27-slim`, `latest`](https://github.com/Hentioe/my-docker-elixir/blob/main/1.17/otp-27-slim/Dockerfile)
+- [`1.17.3-otp-27-slim`, `1.17-otp-27-slim`](https://github.com/Hentioe/my-docker-elixir/blob/main/1.17/otp-27-slim/Dockerfile)
 - [`1.17.3-otp-27-alpine`, `1.17-otp-27-alpine`](https://github.com/Hentioe/my-docker-elixir/blob/main/1.17/otp-27-alpine/Dockerfile)
 - [`1.17.3-otp-27-void`, `1.17-otp-27-void`](https://github.com/Hentioe/my-docker-elixir/blob/main/1.17/otp-27-void/Dockerfile)
 
@@ -38,17 +41,17 @@ You can also pull without specifying any tags, which will default to fetching th
 
 Package the `mix release` artifact into the runner image for deployment. The runner image corresponding to each version is:
 
-| tag                    | runner base                                        |
-| :--------------------- | :------------------------------------------------- |
-| `1.18.4-otp-28-void`   | `ghcr.io/void-linux/void-glibc-busybox:20250701R1` |
-| `1.18.4-otp-28-alpine` | `alpine:3.22`                                      |
-| `1.18.4-otp-28-slim`   | `debian:bookworm`                                  |
-| `1.18.4-otp-27-void`   | `ghcr.io/void-linux/void-glibc-busybox:20250701R1` |
-| `1.18.4-otp-27-alpine` | `alpine:3.22`                                      |
-| `1.18.4-otp-27-slim`   | `debian:bookworm`                                  |
-| `1.17.3-otp-27-void`   | `ghcr.io/void-linux/void-glibc-busybox:20250701R1` |
-| `1.17.3-otp-27-alpine` | `alpine:3.22`                                      |
-| `1.17.3-otp-27-slim`   | `debian:bookworm`                                  |
+| tag                         | runner base                                        |
+| :-------------------------- | :------------------------------------------------- |
+| `1.20.0-rc.1-otp-28-void`   | `ghcr.io/void-linux/void-glibc-busybox:20260101R1` |
+| `1.20.0-rc.1-otp-28-alpine` | `alpine:3.22`                                      |
+| `1.20.0-rc.1-otp-28-slim`   | `debian:bookworm`                                  |
+| `1.18.4-otp-28-void`        | `ghcr.io/void-linux/void-glibc-busybox:20260101R1` |
+| `1.18.4-otp-28-alpine`      | `alpine:3.22`                                      |
+| `1.18.4-otp-28-slim`        | `debian:bookworm`                                  |
+| `1.18.4-otp-27-void`        | `ghcr.io/void-linux/void-glibc-busybox:20260101R1` |
+| `1.18.4-otp-27-alpine`      | `alpine:3.22`                                      |
+| `1.18.4-otp-27-slim`        | `debian:bookworm`                                  |
 
 ## Local build
 

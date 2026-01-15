@@ -2,10 +2,10 @@ when:
   - branch: [main]
     event: push
     path:
-      include: ["1.17/**"]
+      include: ["1.20/**"]
 
 steps:
-  1.17-otp-27-void-build-push:
+  1.20-otp-28-void-build-push:
     image: reg.hentioe.dev/library/plugin-docker-buildx
     privileged: true
     pull: true
@@ -15,13 +15,13 @@ steps:
         from_secret: docker_username
       password:
         from_secret: docker_password
-      dockerfile: 1.17/otp-27-void/Dockerfile
+      dockerfile: 1.20/otp-28-void/Dockerfile
       platforms: linux/amd64,linux/arm64/v8
       tags:
-        - 1.17-otp-27-void
-        - 1.17.3-otp-27-void
+        - 1.20-otp-28-void
+        - 1.20.0-rc.1-otp-28-void
 
-  1.17-otp-27-alpine-build-push:
+  1.20-otp-28-alpine-build-push:
     image: reg.hentioe.dev/library/plugin-docker-buildx
     privileged: true
     pull: true
@@ -31,13 +31,13 @@ steps:
         from_secret: docker_username
       password:
         from_secret: docker_password
-      dockerfile: 1.17/otp-27-alpine/Dockerfile
+      dockerfile: 1.20/otp-28-alpine/Dockerfile
       platforms: linux/amd64,linux/arm64/v8
       tags:
-        - 1.17-otp-27-alpine
-        - 1.17.3-otp-27-alpine
+        - 1.20-otp-28-alpine
+        - 1.20.0-rc.1-otp-28-alpine
 
-  1.17-otp-27-nojit-alpine-build-push:
+  1.20-otp-28-nojit-alpine-build-push:
     image: reg.hentioe.dev/library/plugin-docker-buildx
     privileged: true
     pull: true
@@ -47,13 +47,13 @@ steps:
         from_secret: docker_username
       password:
         from_secret: docker_password
-      dockerfile: 1.17/otp-27-nojit-alpine/Dockerfile
+      dockerfile: 1.20/otp-28-nojit-alpine/Dockerfile
       platforms: linux/amd64,linux/arm64/v8
       tags:
-        - 1.17-otp-27-nojit-alpine
-        - 1.17.3-otp-27-nojit-alpine
+        - 1.20-otp-28-nojit-alpine
+        - 1.20.0-rc.1-otp-28-nojit-alpine
 
-  1.17-otp-27-slim-build-push:
+  1.20-otp-28-slim-build-push:
     image: reg.hentioe.dev/library/plugin-docker-buildx
     privileged: true
     pull: true
@@ -63,8 +63,8 @@ steps:
         from_secret: docker_username
       password:
         from_secret: docker_password
-      dockerfile: 1.17/otp-27-slim/Dockerfile
+      dockerfile: 1.20/otp-28-slim/Dockerfile
       platforms: linux/amd64,linux/arm64/v8
       tags:
-        - 1.17-otp-27-slim
-        - 1.17.3-otp-27-slim
+        - 1.20-otp-28-slim
+        - 1.20.0-rc.1-otp-28-slim
